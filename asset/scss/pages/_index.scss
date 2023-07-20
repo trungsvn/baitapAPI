@@ -1,0 +1,37 @@
+/* INDEX PAGE */
+#searchZone {
+    max-height: 500px;
+    input {
+        border: 2px solid #27a2c9;
+    }
+    form {
+        @include center;
+
+        input {
+            width: 60vw;
+        }
+    }
+    .search-title {
+        display: block;
+        flex-wrap: nowrap;
+    }
+    #toggleFilterTable {
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;   
+    }
+    .form-select {
+        width: 120px;
+        background-color: #fff;
+    }
+}
+#filterTable {
+    background-color: #eee;
+    height: 85px;
+    font-weight: 500;
+    color: $secondaryColor;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #27a2c9;
+    height: 4px;
+}

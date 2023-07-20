@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Thinh Copier</title>
+    <meta name="keywords" content="Gia Thinh Copier">
+    <meta name="description" content="Gia Thinh Copier - smart solution, smart copier">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./asset/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME V6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP V5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FANCYBOX v4.0.31 -->
+    <link rel="stylesheet" href="./asset/css/fancybox.css">
+    <!-- ANIMATE v4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        referrerpolicy="no-referrer" />
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+<body id="home" style="background-color: #fff;">
+    <!-- HEADER -->
+    <header class="container-fluid header-wrapper">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo-index py-2">
+                <h2 style="color:#e8c400">GIA THINH</h2>
+                <h4 style="color:#e8c400">Smart solution smart copier</h4>
+            </div>
+            <div>
+                <ul class="d-flex mb-0">
+                    <li class="nav-item"><a href="#home">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./aboutus.html">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="#productZone">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="#serviceZone">Dịch vụ</a></li>
+                    <li class="nav-item"><a href="#supportZone">Hỗ trợ</a></li>
+                    <li class="nav-item"><a href="./admin.html">Trang admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./asset/img/SHARP/carousel/top_bp_20m24l.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/img/SHARP/carousel/top_bp_70m65.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./asset/img/SHARP/carousel/top_bp_70c65.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- SEARCHBOX -->
+    <div class="searchbox container-fluid px-0 pt-2" id="searchZone">
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="form-inline d-flex py-2">
+                <input class="form-control rounded-0" id="searchTool-index" type="text"
+                    placeholder="Tìm kiếm sản phẩm (nhập tên, model, giá, hãng,...)" aria-label="Search">
+            </form>
+            <div class="d-flex flex-column align-items-center">
+                <h5 class="search-title pb-1 text-dark" style="font-weight: 500;">lọc sản phẩm</h5>
+                <i class="fa-solid fa-angles-down text-dark" id="toggleFilterTable" title="lọc sản phẩm"></i>
+            </div>
+        </div>
+        <div class="sticky-top py-2 d-none" id="filterTable">
+            <form class="container filter-table">
+                <div class="row">
+                    <div class="col">
+                        <label for="branchSelect" class="form-label">Hãng sản xuất</label>
+                        <select class="form-select" id="branchSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="SHARP">SHARP</option>
+                            <option value="RICOH">RICOH</option>
+                            <option value="HP">HP</option>
+                            <option value="other">Hãng khác</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="priceSelect" class="form-label">Giá</label>
+                        <select class="form-select" id="priceSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="under 30">Dưới 30 triệu</option>
+                            <option value="30 to 60">Từ 30 đến 60 triệu</option>
+                            <option value="60 to 100">Từ 60 đến 100 triệu</option>
+                            <option value="above 100">Trên 100 triệu</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="typeSelect" class="form-label">Loại</label>
+                        <select class="form-select" id="typeSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="máy photocopy">Máy photocopy</option>
+                            <option value="máy in">Máy in</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="speedSelect" class="form-label">Tốc độ in</label>
+                        <select class="form-select" id="speedSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="21-30">21-30</option>
+                            <option value="31-45">31-45</option>
+                            <option value="46-55">46-55</option>
+                            <option value="56-70">56-70</option>
+                            <option value=">70">>70</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="colorSelect" class="form-label">Màu</label>
+                        <select class="form-select" id="colorSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="trắng đen">Trắng đen</option>
+                            <option value="màu">Có màu</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="paperSelect" class="form-label">Khổ giấy</label>
+                        <select class="form-select" id="paperSelect">
+                            <option value="" selected>Tất cả</option>
+                            <option value="tối đa A3">Tối đa A3</option>
+                            <option value="tối đa A4">Tối đa A4</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- PRODUCT-ZONE -->
+    <div class="product-container" id="productZone">
+        <div class="container-fluid d-flex">
+            <div class="product-wrapper">
+                <div class="container title w-100 text-center py-5">
+                    <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+                </div>
+                <section class="product-show" id="product-show">
+                    <!-- product được tạo tự động từ API -->
+                </section>
+                <!-- pagination tạo bởi Bootpag -->
+                <div id="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICE -->
+    <section class="service" id="serviceZone">
+        <section class="services section-inner">
+            <div class="services__container container">
+                <div class="title">
+                    <h2 class="py-5">DỊCH VỤ & GIẢI PHÁP</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="services__content">
+                        <div class="service__item">
+                            <div class="service__info">
+                                <img src="./asset/img/solution & service/rent.png" alt="pic1_3">
+                                <h3>Dịch vụ cho thuê máy</h3>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#rentColor" aria-expanded="false"
+                                        aria-controls="rentColor">Cho thuê
+                                        máy
+                                        màu</a></p>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#rentBw" aria-expanded="false"
+                                        aria-controls="rentBw">Cho thuê
+                                        máy
+                                        trắng đen</a></p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__info">
+                                <img src="./asset/img/solution & service/sec.png" alt="pic1_3">
+                                <h3>Giải pháp bảo mật</h3>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#userControl" aria-expanded="false"
+                                        aria-controls="userControl">Dùng User
+                                        Authentication</a></p>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#documentControl"
+                                        aria-expanded="false" aria-controls="documentControl">Dùng Document Control
+                                    </a>
+                                </p>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#dataEncryption" aria-expanded="false"
+                                        aria-controls="dataEncryption">Dùng Data Encryption
+                                    </a></p>
+                            </div>
+                        </div>
+                        <div class="service__item">
+                            <div class="service__info">
+                                <img src="./asset/img/solution & service/Followme.png" alt="pic1_3">
+                                <h3>Phần mềm quản lý</h3>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#kayleighSolution"
+                                        aria-expanded="false" aria-controls="kayleighSolution">Kayleigh
+                                        Solution</a></p>
+                                <p><i class="fa-solid fa-check me-2" style="color: #f40101;"></i><a
+                                        data-bs-toggle="collapse" data-bs-target="#papercutSolution"
+                                        aria-expanded="false" aria-controls="papercutSolution">Papercut
+                                        Solution</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- collapse -->
+            <div class="collapse" id="rentColor">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/SHARP/carousel/top_bp_50c65.jpg" width="100%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Tại sao cần thuê máy màu?</p>
+                                <h2>THUÊ MÁY<br>PHOTOCOPY MÀU<br>ĐANG LÀ XU HƯỚNG</h2>
+                            </div>
+                            <p>Việc sử dụng máy photocopy màu đang là xu hướng hiện tại. Với việc nhiều công ty đa quốc
+                                gia
+                                hay các tập đoàn lớn
+                                đầu tư vào Việt Nam ngày càng nhiều thì nhu cầu này càng cần thiết hơn bao giờ hết bởi
+                                các
+                                ưu điểm sau :
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    In ấn catalog màu hay bản vẽ trở nên dễ dàng nhanh chóng
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Các báo giá có màu sắc góp phần tăng sự chú ý của khách hàng.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Không lo chi phí đầu tư mua máy mới.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Được miễn phí mực, linh kiện tiêu hao và công sửa chữa
+                                </li>
+                            </ul>
+                            <button class="btn btn-success">Báo giá</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="rentBw">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/SHARP/carousel/top_bp_50c65.jpg" width="100%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Tại sao cần thuê máy trắng đen?</p>
+                                <h2>THUÊ MÁY<br>PHOTOCOPY TRẮNG ĐEN<br>LÀ GIẢI PHÁP TỐI ƯU</h2>
+                            </div>
+                            <p>Việc sử dụng máy photocopy trắng đen đa năng đang là xu hướng hiện tại. Với việc nhiều
+                                công
+                                ty đa quốc gia
+                                hay các tập đoàn lớn
+                                đầu tư vào Việt Nam ngày càng nhiều thì nhu cầu này càng cần thiết hơn bao giờ hết bởi
+                                các
+                                ưu điểm sau :
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    In được khổ A3, công suất in lớn, đa năng với chức năng copy/in/scan màu
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Bền bỉ hơn máy in, giao diện dễ sử dụng hơn máy in.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Không lo chi phí đầu tư mua máy mới.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Được miễn phí mực, linh kiện tiêu hao và công sửa chữa
+                                </li>
+                            </ul>
+                            <button class="btn btn-success">Báo giá</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="userControl">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/solution & service/MFP4.png" width="50%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Bảo mật với tính năng User Authentication</p>
+                                <h2>BẢO MẬT<br>LÀ GIẢI PHÁP<br>TRÁNH MẤT TÀI LIỆU</h2>
+                            </div>
+                            <p>Để hạn chế truy cập và sử dụng máy, Sharp MFP có thể sử dụng mã tài khoản, tập tin người
+                                dùng/nhóm, mật khẩu hoặc tài khoản người dùng bên ngoài có trong LDAP hoặc máy chủ AD
+                                Server.
+                                Lợi ích khi có tính năng bảo mật:
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Bảo vệ được nội dung in ấn.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Truy vấn, phân quyền hạn cho người dùng.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Quản lý tập trung, báo cáo chi tiết rõ ràng theo người dùng.
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btn-success">Báo giá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="documentControl">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/solution & service/MFP3.png" width="50%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Bảo mật với tính năng Document Control</p>
+                                <h2>BẢO MẬT DOCUMENT CONTROL<br>LÀ GIẢI PHÁP<br>CHỐNG SAO CHÉP TÀI LIỆU</h2>
+                            </div>
+                            <p>Chức năng Kiểm soát Tài liệu, khả dụng để sử dụng trên các MFP Sharp với Bộ công cụ Bảo
+                                mật
+                                Dữ liệu, ngăn chặn việc sao chép, quét, fax và gửi trái phép các tài liệu bí mật bằng
+                                cách
+                                nhúng dữ liệu ngăn chặn sao chép vào tài liệu.
+                                Lợi ích khi có tính năng bảo mật Document Control:
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chống sao chép các văn bằng, chứng chỉ .
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chống sao chép tài liệu nếu được nhúng kèm mã bảo mật.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Mã hóa hoặc xóa dữ liệu nếu cố tình sao chép.
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btn-success">Báo giá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="dataEncryption">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/solution & service/MFP1.png" width="50%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Bảo mật với tính năng Data Encryption and Overwriting</p>
+                                <h2>BẢO MẬT DATA ENCRYPTION & OVERWRITING<br>LÀ GIẢI PHÁP<br>MÃ HÓA TÀI LIỆU</h2>
+                            </div>
+                            <p>Máy đa chức năng kỹ thuật số giữ lại một lượng lớn dữ liệu từ các tác vụ sao
+                                chép/in/quét/fax
+                                trong bộ nhớ trong. Để bảo vệ dữ liệu bí mật khỏi bị truy cập trái phép, Sharp MFP tự
+                                động
+                                mã hóa dữ liệu lệnh in trước khi lưu vào bộ nhớ trong; sau đó xóa nó thông qua nhiều lần
+                                ghi
+                                đè tự động, điều đó giúp bạn yên tâm.
+                                Lợi ích khi có tính năng bảo mật Document Control:
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chống sao chép nội dung trên đĩa cứng .
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chống sao chép tài liệu nếu được mã hóa.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Trả về dữ liệu trắng nếu cố tình truy cập.
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btn-success">Báo giá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="kayleighSolution">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/solution & service/software_tab4a.jpg" width="50%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Phần mềm quản lý chi phí in ấn</p>
+                                <h2>PHẦN MỀM KAYLEIGH<br>LÀ GIẢI PHÁP<br>DO SHARP TỰ THIẾT KẾ</h2>
+                            </div>
+                            <p>Nó cung cấp cho mọi người trong văn phòng của bạn một cách in thông minh hơn và an toàn
+                                hơn.
+                                Nó hoạt động bằng cách lưu trữ tài liệu trên máy chủ cho đến khi chúng được yêu cầu,
+                                thay vì
+                                in chúng ra ngay lập tức. Và điều đó có nghĩa là ít lượt truy cập vào MFP hơn, ít phải
+                                chờ
+                                đợi hơn, bảo mật tài liệu được cải thiện và giảm lãng phí.
+                                Lợi ích khi dùng phần mềm quản lý:
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Quản lý tập trung, báo cáo chi tiết theo user & department .
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Charge tiền trên từng user hay department.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chức năng print follow me giúp người dùng thuận tiện hơn.
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btn-success">Báo giá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="papercutSolution">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__left wow animate__animated animate__fadeInLeft" data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <img src="./asset/img/solution & service/software_tab4c.jpg" width="50%">
+                        </div>
+                        <div class="about__right wow animate__animated animate__fadeInRight " data-wow-duration="2s"
+                            data-wow-delay="0.2s">
+                            <div class="title">
+                                <p>Phần mềm quản lý chi phí in ấn</p>
+                                <h2>PHẦN MỀM PAPERCUT<br>LÀ GIẢI PHÁP<br>DO BÊN THỨ 3 THIẾT KẾ</h2>
+                            </div>
+                            <p>Quyền truy cập quản lý in mạnh mẽ từ bất kỳ vị trí mạng nào để cho phép quản lý tập trung
+                                mọi
+                                người dùng và thiết bị in. Quản trị tích hợp, dựa trên trình duyệt cho phép truy cập từ
+                                bất
+                                kỳ vị trí mạng nào để quản lý tập trung người dùng và thiết bị. Bảng điều khiển cung cấp
+                                chế
+                                độ xem một trang, dễ đọc về môi trường in trong thời gian thực.
+                                Lợi ích khi dùng phần mềm quản lý:
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Quản lý tập trung, báo cáo chi tiết theo user & department .
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Charge tiền trên từng user hay department.
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    Chức năng print follow me giúp người dùng thuận tiện hơn.
+                                </li>
+                            </ul>
+                            <!-- <button class="btn btn-success">Báo giá</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <!-- SUPPORT -->
+    <section class="support container-fluid py-5" id="supportZone">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="title mb-5">
+                <h2 style="color: red">HỖ TRỢ</h2>
+            </div>
+            <div id="downloadsList" class="non clearfix">
+                <div class="downloadsBtn brochures">
+                    <div class="icon"><img src="./asset/img/download/ic_brochures.png"></div>
+                    <a href="https://global.sharp/products/copier/downloads/brochures/index.html"><span
+                            class="downloadsLink"><span class="downloadsArrow">Brochures &nbsp;<i
+                                    class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+                <div class="downloadsBtn manuals">
+                    <div class="icon"><img src="./asset/img/download/ic_instructionmanuals_2.png"></div>
+                    <a href="https://global.sharp/restricted/products/copier/downloads/manuals/select.html"><span
+                            class="downloadsLink"><span class="downloadsArrow">Manuals &nbsp;<i
+                                    class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+                <div class="downloadsBtn drivers">
+                    <div class="icon"><img src="./asset/img/download/ic_drivers.png"></div>
+                    <a href="https://global.sharp/restricted/products/copier/downloads/select_us_driver.html"><span
+                            class="downloadsLink"><span class="downloadsArrow">Driver &nbsp;<i
+                                    class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+                <div class="downloadsBtn softwares">
+                    <div class="icon"><img src="./asset/img/download/ic_softwares.png"></div>
+                    <a href="https://global.sharp/restricted/products/copier/downloads/select_us_software.html"><span
+                            class="downloadsLink"><span class="downloadsArrow">Software &nbsp;<i
+                                    class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+                <div class="downloadsBtn errors">
+                    <div class="icon"><img src="./asset/img/download/no-error-sign-hi.png"></div>
+                    <a href="downloads/brochures/index.html"><span class="downloadsLink"><span class="downloadsArrow">Mã
+                                lỗi &nbsp;<i class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+                <div class="downloadsBtn videos">
+                    <div class="icon"><img src="./asset/img/download/video1.jpg"></div>
+                    <a href="downloads/brochures/index.html"><span class="downloadsLink"><span
+                                class="downloadsArrow">Video
+                                &nbsp;<i class="fa-solid fa-caret-right"></i></span></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-footer text-center text-lg-start text-white mt-5" id="footer">
+        <!-- Grid container -->
+        <div class="container p-2">
+            <!--Grid row-->
+            <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flec flex-column">
+
+                    <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+                        style="width: 100px; height: 100px;">
+                        <img src="./asset/img/logo.png" height="90" alt="" loading="lazy" />
+                    </div>
+
+                    <p class="text-center">CÔNG TY TNHH THIẾT BỊ VĂN PHÒNG GIA THỊNH</p>
+
+                    <ul id="tnContact" class="d-flex justify-content-center align-items-center mb-0">
+                        <li>
+                            <a href=" https://m.me/trung.nguyenvan.902" class="iconfb" target="_blank">
+                                <i class="text-black fab fa-facebook-f"></i>
+                            </a>
+                            <!-- <span class="text-black label fb" >Chat Facebook</span> -->
+                        </li>
+                        <li>
+                            <a href="https://zalo.me/0785411888" class="iconzalo" target="_blanl">
+                                <img src="https://caohungphat.com/wp-content/uploads/2019/07/icon_zalomessage.png"
+                                    alt="" style="width: 20px;height: 20px;">
+                            </a>
+                            <!-- <span class=" text-black label zalo">Nhắn tin zalo</span> -->
+                        </li>
+                        <li>
+                            <a href="sms:0785411888" class="iconsms">
+                                <i class="text-black fa-solid fa-comment-sms fa-2xl"></i>
+                            </a>
+                            <!-- <span class="text-black label sms">Nhắn tin điện thoại</span> -->
+                        </li>
+                        <li>
+                            <a href="tel:0899326019" class="iconcall">
+                                <i class="text-black fas fa-phone fa-2xl"></i>
+                            </a>
+                            <!-- <span class="text-black label call">Gọi điện thoại</span> -->
+                        </li>
+                        <li>
+                            <a class="text-black ps-2" href="#!">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Tra cứu thông tin</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Lịch sử sửa chữa</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Lịch sử báo giá</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Hợp đồng</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Hóa đơn</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Chính sách và điều khoản</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Chính sách bảo hành</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Chính sách đổi trả sản
+                                phẩm</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Chính sách bảo mật</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="text-black"><i class="fas fa-paw pe-3"></i>Phương thức thanh
+                                toán</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Liên hệ</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><i class="fas fa-map-marker-alt pe-2"></i>469/32 Nguyễn Oanh, Phường 17, Quận Gò Vấp,
+                                TP Hồ Chí Minh.</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-phone pe-2"></i>(+84) 0785411888 </p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope pe-2 mb-0"></i>kythuat@giathinhcopier.vn</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="http//:www.giathinhcopier.vn">www.giathinhcopier.vn</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- CONTROL BUTTONS -->
+    <div style="position:relative">
+        <div class="cart-icon rounded-circle" id="cartIcon" title="giỏ hàng">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="phone-icon rounded-circle ani-tumbler" id="phoneIcon" title="gọi điện tư vấn">
+            <i class="fa-solid fa-phone"><a href="tel:+840785411888"></a></i>
+        </div>
+    </div>
+    <!-- HIDDEN SECTIONS -->
+    <!-- CART MODALS -->
+    <section class="cart-zone" id="cartZone" style="display: none;">
+        <div class="cart-body">
+            <div class="accordion" id="cartAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="cartAddHeading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#cartAddCollapse" aria-expanded="true" aria-controls="cartAddCollapse">
+                            <i class="fa-solid fa-cart-shopping me-2"></i>Giỏ hàng
+                        </button>
+                    </h2>
+                    <div id="cartAddCollapse" class="accordion-collapse collapse show" aria-labelledby="cartAddHeading"
+                        data-bs-parent="#cartAccordion">
+                        <div class="accordion-body">
+                            <table class="cart-table-add">
+                                <thead class="text-center pb-2">
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Trạng thái</th>
+                                        <th>Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="cart-item"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td style="font-weight: 700;">Tổng cộng:</td>
+                                        <td class="cart-total py-2"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="cartOrderHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#cartOrderCollapse" aria-expanded="false" aria-controls="cartOrderCollapse">
+                            <i class="fa-solid fa-receipt me-2"></i>Đơn hàng đã đặt
+                        </button>
+                    </h2>
+                    <div id="cartOrderCollapse" class="accordion-collapse collapse" aria-labelledby="cartOrderHeading"
+                        data-bs-parent="#cartAccordion">
+                        <div class="accordion-body">
+                            <table class="cart-table-order">
+                                <thead class="text-center mb-2">
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Giá</th>
+                                        <th>Số lượng</th>
+                                        <th>Trạng thái</th>
+                                        <th>Hủy đơn hàng</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="order-item"></tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td style="font-weight: 700;">Tổng cộng:</td>
+                                        <td class="cart-total-order py-2"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-btn d-flex pt-3 justify-content-center">
+                <button id="btnOrder" class="btn btn-success me-2">đặt hàng</button>
+                <button id="btnReset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+    </section>
+    <!-- ADD-TO-CARD MODAL -->
+    <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="addProductModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="addProductModalLabel">Thông tin sản phẩm</h5>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center">
+                    <div class="product-info d-flex flex-column align-items-center">
+                        <img src="" alt="" class="product-img">
+                    </div>
+                    <div class="attributes"></div>
+                </div>
+                <div class="modal-footer d-flex">
+                    <div class="quantity mt-2">
+                        <label for="quantity-input">Số lượng:</label>
+                        <input type="number" id="quantity-input" class="quantity-input px-1" min="1" max="3" value="1"
+                            style="width: 80px; font-weight: 500;">
+                    </div>
+                    <button type="button" class="btn btn-success btn-add-to-cart"><i
+                            class="fa fa-cart-shopping me-2"></i>Thêm vào giỏ hàng</button>
+                    <button type="button" class="btn btn-danger close ms-2" data-bs-dismiss="modal" aria-label="Close">
+                        X Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- IMPORT SCRIPTS -->
+    <!-- JQUERY V3.7.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- BOOTSTRAP V5.3.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- BOOTPAG V1.0.7 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootpag/1.0.7/jquery.bootpag.min.js"
+        integrity="sha512-9PnpJ6p3yWEYYgxG+BrwRkKxaVaziAYmugw4aDWI3Olbp5IJWhHDKXNZTI4DRqEF3LxtXZr/L9jZT1b7D6HTHQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- WAYPOINT V4.0.1 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- WOWJS V1.1.2 -->
+    <script src="./asset/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- CUSTOMER MODEL & VIEW -->
+    <script src="./customer/model/customer-model.js"></script>
+    <script src="./customer/view/customer-view.js"></script>
+    <!-- AXIOS LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- CUSTOMER JS -->
+    <script src="./customer/controller/customer-main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+/*ANIMATIONS*/
+.paused {
+    animation-play-state: paused;
+  }
+.ani-tumbler {
+    animation: tumbler 1s infinite;
+}
+@keyframes tumbler {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    75% { transform: rotate(-20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#exclamation {
+    background-color: red;
+    border-radius: 50%;
+    @include square (16px);
+    position: absolute;
+    top:1px;
+    right:2px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    animation: tumbler 1.5s infinite;
+    @include center;
+}
+
+@keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+  

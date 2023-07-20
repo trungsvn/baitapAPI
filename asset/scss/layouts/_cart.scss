@@ -1,0 +1,117 @@
+/* CART */
+#cartZone {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: #27a;
+    border-radius: 8px;
+    max-width: 600px;
+    z-index: 9999;
+    .price {
+        color: red;
+    }
+    .btn {
+        border-radius: 20px;
+        &:hover {
+            filter: brightness(1.2)
+        }
+    }
+    #btnOrder {
+        background-color: $green;
+    }
+    .cart-total, .cart-total-order {
+        font-weight: 700;
+        font-size: 18px;
+        color: red;
+    }
+    thead,
+    th,
+    td {
+        width: 90px;
+        text-align: center;
+    }
+
+    .cart-header {
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .cart-item,
+    .order-item {
+        max-width: 60px;
+        margin-bottom: 10px;
+        .btnRemoveAdd,
+        .btnRemoveOrder {
+            cursor: pointer;
+            font-size: 22px;
+            color: red;
+        }
+        img {
+            @include square(60px);
+        }
+        tr {
+            border: 1px solid #ddd;
+        }
+        h5 {
+            color: red;
+            font-weight: 600;
+        }
+        
+    }
+
+    .cart-table-add {
+        border-radius: 8px;
+        background-color: white;
+    }
+    .accordion-body {
+        padding: 0 1rem 0 1rem;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .accordion-button {
+        min-width: 511.333px;
+        color: $green;
+        max-width: 550px;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-weight: 700;
+        background-color: $grey;
+        box-shadow  : 1px solid #fff;
+        &:focus, &:hover {
+            box-shadow: none;
+            color: $green;
+            background-color: #fff;
+            transition: all ease .3s;
+        }
+    }
+
+}
+
+#cart-table-order {
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+.cart-icon {
+    background-color: #27a2c9;
+    position: fixed;
+    cursor: pointer;
+    bottom: 65px;
+    right: 20px;
+    z-index: 1998;
+    @include square(3rem);
+    @include center;
+    @include ripple;
+    i {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}
+.phone-icon {
+    @extend .cart-icon;
+    bottom: 125px;
+}

@@ -1,0 +1,25 @@
+.content {
+  width: 50%;
+  top: 88px;
+  left: 100px;
+  position: absolute;
+}
+
+.trung {
+  bottom: -170px;
+  left: 300px;
+  position: absolute;
+}
+
+.fas .fa-facebook-f {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.sign {
+  bottom: 50px;
+  left: 350px;
+  position: absolute;
+  opacity: 70%;
+  width: 20%;
+}/*# sourceMappingURL=aboutus.css.map */

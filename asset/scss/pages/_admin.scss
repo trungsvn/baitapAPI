@@ -1,0 +1,153 @@
+/*ADMIN PAGE*/
+$admin-header-height: 60px;
+$admin-sidebar-width: 50px;
+
+.admin__header__wrapper {
+    background-color: $secondaryColor;
+    box-shadow: $box-shadow-normal;
+
+}
+
+.admin__header {
+    height: $admin-header-height;
+    background-color: inherit;
+    justify-content: space-between;
+
+    .logo {
+        width: 200px;
+        background-color: $secondaryColor;
+
+        &>* {
+            color: #fff
+        }
+
+        ;
+    }
+
+    .searchbox {
+        padding: 6px;
+        width: 60vw;
+    }
+
+    .searchbox input::placeholder {
+        opacity: 1;
+    }
+
+
+}
+
+.admin__sidebar {
+    background-color: #eee;
+    width: $admin-sidebar-width;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+
+    a {
+        width: $admin-sidebar-width * 0.8;
+        background-color: $primaryColor;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        color: #333;
+        @include center;
+
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+
+}
+
+.admin__main {
+    #product-table-admin {
+
+        tr,
+        td {
+            height: 140px;
+        }
+    }
+
+    .table-responsive {
+        max-height: 84vh;
+        overflow: auto;
+        background-color: #fff;
+        width: 100%;
+        h4 {
+            font-weight: 600;
+        }
+        h4 span {
+            font-weight: 500;
+            color: red;
+        }
+
+        .table-title {
+            background-color: #fff;
+            justify-content: space-between;
+
+            h3 {
+                font-family: $primaryFont;
+                color: $secondaryColor;
+                font-weight: 700;
+            }
+        }
+
+        img {
+            width: 80px;
+            height: 60px;
+        }
+
+    }
+    .product-row {
+        height: 190.4px;
+    }
+
+    #product-form {
+        background-color: $grey;
+    }
+
+    #product-delete-form {
+        background-color: $grey;
+    }
+
+    .product-group-manage {
+        @include center;
+
+        #btn-modal-edit {
+            color: $primaryColor;
+        }
+
+        #btnDelete {
+            color: red;
+        }
+
+        i {
+            font-size: 1.25rem;
+        }
+
+        #btnUrl {
+            color: $blue;
+        }
+    }
+    .product-img-container {
+        width: 100%;
+        @include center;
+    }
+}
+#backToTop {
+    font-size: 20px;
+    position: fixed;
+    right: 1.8rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+    background: $primaryColor;
+    border-radius: 50%;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px $primaryColor;
+    display: none;
+}

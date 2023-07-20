@@ -1,0 +1,112 @@
+/* SERVICES */
+.services {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-position: top center;
+    // text-align: center;
+}
+
+.section-inner {
+    padding: 60px;
+}
+
+.services__container {
+    max-width: 1199px;
+    margin: auto;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service__item img {
+    width: 215px;
+}
+
+.service__item {
+    border-radius: 0.5rem;
+    height: 350px;
+    background: #fff;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px 45px;
+    transform: translateY(0);
+    transition: all 0.5s;
+    border-image: 100 round;
+    border: 3px solid transparent;
+    align-items: center;
+    text-align: center;
+    @include center;
+    flex-direction: column;
+}
+
+.service__item:hover {
+    transform: translateY(-20px);
+}
+.service__info {
+    display: block;
+    text-align: left;
+    a:hover {
+        color: #27a2c9;
+    } 
+}
+.service__info>* {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ABOUT */
+.about {
+    padding-bottom: 5rem;
+    background-image: url(../../img/1656623358_79_Background-Banner-Dep-Da-Dang-Danh-Cho-Moi-Chu-De.jpg);
+    background-size: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.about__content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about__left,
+.about__right {
+    width: 50%;
+}
+.about__right{
+    justify-content: left;
+}
+
+.about__left img {
+    width: 100%;
+    border-radius: 0 6.25rem 6.25rem 0;
+    transform: translate(-6.5rem, -1rem) scale(1.3);
+}
+
+.about__right i {
+    margin-right: .75rem;
+    font-size: 1.5rem;
+    color: #f55f8d;
+    vertical-align: middle;
+}
+
+.about__right p {
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.about__right ul {
+    margin-bottom: 2rem;
+}
+.collapse{
+    padding-top: 40px;
+}

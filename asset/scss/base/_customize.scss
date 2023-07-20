@@ -1,0 +1,55 @@
+/*BOOSTRAP CUSTOMIZES*/
+$bs-input-size: 34px;
+.table {
+    margin-bottom: 0;
+}
+
+.table-hover>tbody>tr:hover>* {
+    --bs-table-bg-state: #eee;
+}
+
+form {
+    border-radius: 6px;
+    padding: 0 1rem 0 1rem;
+}
+
+.form-group {
+    padding-bottom: 1.5rem;
+
+    &:first-of-type {
+        padding-top: 1.5rem;
+    }
+
+    input[type=radio] {
+        border-radius: 50%;
+        @include square(1rem);
+    }
+
+    i {
+        @include square($bs-input-size / 2)
+    }
+
+    textarea {
+        border: none;
+    }
+}
+
+.input-group {
+    .input-group-text {
+        height: $bs-input-size;
+        width: $bs-input-size;
+        border-radius: 6px 0 0 6px;
+        background-color: $primaryColor;
+        @include center;
+        @include spacing-0;
+
+        i {
+            font-size: $bs-input-size / 2;
+        }
+
+    }
+
+    .form-control {
+        height: $bs-input-size;
+    }
+}

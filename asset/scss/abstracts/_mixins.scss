@@ -1,0 +1,109 @@
+@mixin spacing-0 {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin square ($square) {
+    width: $square;
+    height: $square;
+}
+
+@mixin border($top, $right, $bottom, $left, $style, $color, $round) {
+    border-top: $top;
+    border-right: $right;
+    border-bottom: $bottom;
+    border-left: $left;
+    border-style: $style;
+    border-color: $color;
+    border-radius: $round;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin animation($name, $duration: 1s, $timing-function: ease, $delay: 0s, $iteration-count: 1, $direction: normal) {
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $timing-function;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration-count;
+    -webkit-animation-direction: $direction;
+
+    -moz-animation-name: $name;
+    -moz-animation-duration: $duration;
+    -moz-animation-timing-function: $timing-function;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration-count;
+    -moz-animation-direction: $direction;
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing-function;
+    animation-delay: $delay;
+    animation-iteration-count: $iteration-count;
+    animation-direction: $direction;
+}
+
+@mixin headings {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        @content
+    }
+}
+
+@mixin reset-list {
+    list-style: none;
+}
+
+@mixin reset-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin ripple {
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 50%;
+        border: 2px solid #27a2c9;
+        z-index: -1;
+    }
+
+    &::before {
+        animation: ripple 1.2s linear infinite;
+    }
+
+    &::after {
+        animation: ripple 1.2s linear infinite;
+        animation-delay: 0.4s;
+    }
+}

@@ -1,0 +1,28 @@
+
+.header-wrapper {
+	background-image: url(https://www.artisjet.com/images/easyblog_articles/260/how-to-speed-up-the-printing-process.jpg);
+	background-position: bottom;
+	background-size: cover;
+	color: #fff;
+}
+.nav-item {
+	padding-right: 16px;
+	&:hover {
+		color: $primaryColor;
+		font-weight: 600;	
+	}
+	&::after {
+	  content: "";
+	  display: block;
+	  width: 0;
+	  height: 1px;
+	  background-color: $primaryColor;
+	  transition: width 0.3s;
+	}
+  
+	&:hover::after {
+	  width: 100%;
+	}
+  }
+  
+  

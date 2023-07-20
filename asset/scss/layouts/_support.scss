@@ -1,0 +1,126 @@
+/*****support*****/
+.support {
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+}
+
+  #downloadsList{
+    @include center;
+    flex-wrap: wrap;
+  }
+ 
+  .brochures {
+      background-color: #e1e440;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+  }
+  .brochures a{
+      background-color:#e1e500;
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+  .manuals{
+      background-color: #B355B3;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+    }
+    .manuals a{
+      background-color:#783678;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+    .drivers{
+      background-color: #96be44;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+    }
+    .drivers a{
+      background-color:#5f870c;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+    
+    .softwares{
+      background-color: #2c8be5;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+    }
+    .softwares a{
+      background-color:#0f589d;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+  .errors{
+      background-color: #e4405e;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+    }
+    .errors a{
+      background-color:#ae1430;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+  .videos{
+      background-color: #e52ccc;
+      box-sizing: border-box;
+      display: block;
+      padding: 20px 30px 20px 30px;
+      border-radius: 3px;
+    }
+    .videos a{
+      background-color:#9d0f67;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+  .icon{
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  .brochures a{
+      background-color:#ae1430;
+  
+      box-sizing: border-box;
+      display: block;
+      padding: 5px 10px 5px 10px;
+      border-radius: 3px;
+  }
+  .downloadsBtn {
+    transform: translateY(0);
+    margin-right: 20px;
+  }.downloadsBtn:hover{
+      opacity: 80%;
+      transform: translateY(-10px);
+      transition: all 1s;
+  }
+  .clearfix{
+    display: flex;
+  }

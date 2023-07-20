@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gia Thinh Copier</title>
+  <meta name="keywords" content="Gia Thinh Copier">
+  <meta name="description" content="Gia Thinh Copier - smart solution, smart copier">
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./asset/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./asset/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./asset/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./asset/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./asset/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWESOME V6.4.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOOTSTRAP V5.3.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- CSS STYLE -->
+  <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body class="px-0 overflow-visible">
+  <div class="admin__header__wrapper container-fluid sticky-top me-0 px-0">
+    <div class="admin__header d-flex container align-items-center">
+      <div class="logo">
+        <h3><a href="#">GIA THINH COPIER</a></h3>
+        <h4>|Admin|</h4>
+      </div>
+      <div class="searchbox">
+        <form class="form-inline d-flex">
+          <input class="form-control rounded-0" id="searchTool" type="text"
+            placeholder="Tìm kiếm sản phẩm (nhập tên, model, giá, hãng,...)" aria-label="Search">
+        </form>
+      </div>
+      <div class="switch text-white">
+        <a href="./index.html">Về trang chủ</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="admin__main container-fluid px-0">
+    <div class="admin__sidebar d-flex justify-content-center sticky-top">
+      <ul class="">
+        <li><a href="" title="Dashboard"><i class="fa fa-chart-line"></i></a></li>
+        <li><a href="" title="Quản lý sản phẩm" style="filter:contrast(1.5)"><i class="fa fa-cubes"></i></a></li>
+        <li><a href="" title="Hộp thư"><i class="fa fa-envelope"></i></a></li>
+        <li><a href="" title="Cài đặt"><i class="fa fa-cog"></i></a></li>
+      </ul>
+    </div>
+    <!-- PRODUCT TABLE -->
+    <div class="container py-4">
+      <div class="table-responsive">
+        <div class="table-title d-flex align-items-center px-3 py-2">
+          <h3>QUẢN LÝ SẢN PHẨM</h3>
+          <button id="btn-modal" class="btn" style="background-color: #eee;" data-bs-toggle="modal"
+            data-bs-target="#product-modal"><i class="fa fa-plus me-1"></i>
+            thêm sản phẩm</button>
+        </div>
+        <table class="table table-hover table-nowrap">
+          <thead class="table-dark text-center sticky-top">
+            <tr>
+              <th class="col-2">Sản phẩm</th>
+              <th class="col-3 text-start">Thông tin</th>
+              <th class="col-5">Mô tả</th>
+              <th class="col-2">Quản lý</th>
+            </tr>
+          </thead>
+          <tbody id="product-table-admin" class="text-center">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- PRODUCT MODAL -->
+    <div class="modal fade" id="product-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <header class="head-form mt-3 text-center">
+            <h3 id="header-title">THÔNG TIN SẢN PHẨM</h3>
+          </header>
+          <div class="modal-body">
+            <form id="product-form" role="form">
+              <!-- MÃ SẢN PHẨM -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-key"></i></span>
+                  </div>
+                  <input type="text" id="name" class="form-control input-sm" placeholder="Mã sản phẩm">
+                </div>
+                <span class="check" id="check-name"></span>
+              </div>
+              <!-- TIÊU ĐỀ -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-t"></i></span>
+                  </div>
+                  <input type="text" id="title" class="form-control input-sm" placeholder="Tiêu đề">
+                </div>
+                <span class="check" id="check-title"></span>
+              </div>
+              <!-- LINK HÌNH ẢNH -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-image"></i></span>
+                  </div>
+                  <input type="text" id="image" class="form-control input-sm" placeholder="Link hình ảnh sản phẩm">
+                </div>
+                <span class="check" id="check-image"></span>
+              </div>
+              <!-- GIÁ -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-dollar-sign" aria-hidden="true"></i></span>
+                  </div>
+                  <input type="number" id="price" class="form-control input-sm no-spinner" placeholder="Giá">
+                </div>
+                <span class="check" id="check-price"></span>
+              </div>
+              <!-- TỐC ĐỘ IN -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-bolt"></i></span>
+                  </div>
+                  <input type="number" id="speed" class="form-control input-sm no-spinner"
+                    placeholder="Tốc độ in (PPM)">
+                </div>
+                <span class="check" id="check-speed"></span>
+              </div>
+              <!-- HÃNG -->
+              <div class="form-group" style="padding-bottom: 1rem;">
+                <div class="input-group pb-5">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text justify-content-start" style="width:80px"><i
+                        class="fa fa-building mx-2"></i><label for="branch">Hãng</label></span>
+                  </div>
+                  <div class="form-control">
+                    <input type="radio" class="branch" id="branch_sharp" name="branch" value="SHARP" checked>
+                    <label class="me-4">SHARP</label>
+                    <input type="radio" class="branch" id="branch_ricoh" name="branch" value="RICOH">
+                    <label class="me-4">RICOH</label>
+                    <input type="radio" class="branch" id="branch_hp" name="branch" value="HP">
+                    <label class="me-4">HP</label>
+                    <div class="input-group" style="width: 103.8%;">
+                      <input type="text" id="branch_other" name="branch" class="form-control input-sm mt-2"
+                        placeholder="Khác (nhập tên hãng)">
+                    </div>
+                  </div>
+                </div>
+                <span class="check" id="check-branch"></span>
+              </div>
+              <!-- LOẠI -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="width:80px"><i class="fa-solid fa-print mx-2"></i><label
+                        for="type">Loại</label></span>
+                  </div>
+                  <div class="form-control">
+                    <input type="radio" class="type" id="type_printer" name="type" value="máy in" checked>
+                    <label for="printer" class="pe-4">Máy in</label>
+                    <input type="radio" class="type" id="type_copier" name="type" value="máy photocopy">
+                    <label for="copier">Máy photocopy</label>
+                  </div>
+                </div>
+                <span class="check" id="check-type"></span>
+              </div>
+              <!-- IN MÀU -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text justify-content-start" style="width:80px"><i
+                        class="fa-solid fa-droplet mx-2"></i><label for="paper">Màu</label></span>
+                  </div>
+                  <div class="form-control">
+                    <input type="radio" class="color" id="color_no" name="color" value="trắng đen" checked>
+                    <label for="printer" class="pe-4">Trắng đen</label>
+                    <input type="radio" class="color" id="color_yes" name="color" value="màu">
+                    <label for="copier">Màu</label>
+                  </div>
+                </div>
+                <span class="check" id="check-color"></span>
+              </div>
+              <!-- KHỔ GIẤY -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text justify-content-start" style="width:105px"><i
+                        class="fa-solid fa-sticky-note mx-2"></i><label for="paper">Khổ giấy</label></span>
+                  </div>
+                  <div class="form-control">
+                    <input type="radio" class="paper" id="type_printer" name="paper" value="tối đa A3" checked>
+                    <label for="a3" class="pe-4">Tối đa A3</label>
+                    <input type="radio" class="paper" id="type_copier" name="paper" value="tối đa A4">
+                    <label for="a4">Tối đa A4</label>
+                  </div>
+                </div>
+                <span class="check" id="check-paper"></span>
+              </div>
+              <!-- THÔNG SỐ KỸ THUẬT -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend" style="width: 110px;">
+                    <span class="input-group-text justify-content-start mb-1"
+                      style="width: inherit; border-radius: 6px;"><i class="fa-solid fa-pen-ruler mx-2"></i>Thông
+                      số</span>
+                  </div>
+                  <div class="d-flex">
+                    <div class="pe-1">
+                      <input type="text" id="spec_RAM" class="spec form-control ontrol input-sm mb-1" placeholder="RAM">
+                      <input type="text" id="spec_HDD" class="spec form-control input-sm mb-1" placeholder="HDD">
+                      <input type="text" id="spec_DPI" class="spec form-control input-sm" placeholder="DPI">
+                    </div>
+                    <div class="ps-1">
+                      <input type="text" id="spec_tray" class="spec form-control input-sm mb-1" placeholder="Khay">
+                      <input type="text" id="spec_warmUpTime" class="spec form-control input-sm"
+                        placeholder="Thời gian khởi động">
+                    </div>
+                  </div>
+                </div>
+                <span class="check" id="check-spec"></span>
+              </div>
+              <!-- TÙY CHỌN -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend" style="width: 110px;">
+                    <span class="input-group-text justify-content-start mb-1"
+                      style="width: inherit; border-radius: 6px;"><i class="fa-solid fa-circle-plus mx-2"></i>Tùy
+                      chọn</span>
+                  </div>
+                  <div class="d-flex">
+                    <div class="pe-1">
+                      <input type="text" id="option_DSPF" class="option form-control input-sm  mb-1" placeholder="DSPF">
+                      <input type="text" id="option_RSPF" class="option form-control input-sm  mb-1" placeholder="RSPF">
+                      <input type="text" id="option_finisher" class="option form-control input-sm  mb-1"
+                        placeholder="Finisher">
+                      <input type="text" id="option_fax" class="option form-control input-sm" placeholder="Fax">
+                    </div>
+                    <div class="pe-1">
+                      <input type="text" id="option_solution" class="option form-control input-sm  mb-1"
+                        placeholder="Solution">
+                      <input type="text" id="option_addHdd" class="option form-control input-sm  mb-1"
+                        placeholder="Thêm Hdd">
+                      <input type="text" id="option_addRam" class="option form-control input-sm  mb-1"
+                        placeholder="Thêm RAM">
+                      <input type="text" id="option_addStand" class="option form-control input-sm"
+                        placeholder="Thêm stand">
+                    </div>
+                  </div>
+                </div>
+                <span class="check" id="check-option"></span>
+              </div>
+              <!-- MÔ TẢ -->
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text justify-content-start mb-1" style="width:100px;border-radius: 6px;"><i
+                        class="fa-solid fa-message mx-2"></i><label for="description">Mô tả</label></span>
+                  </div>
+                  <textarea id="description" name="description" rows="4" class="w-100"></textarea>
+                  <span class="check" id="check-description"></span>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer" id="modal-footer">
+            <button id="btnAdd" type="button" class="btn btn-primary">Thêm sản phẩm</button>
+            <button id="btnEdit" type="button" class="btn btn-success">Cập nhật sản phẩm</button>
+            <button id="btnClose" type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BACK-TO-TOP BUTTON -->
+  <a href="#" id="backToTop">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+</body>
+<!-- IMPORT SCRIPTS -->
+<!-- JQUERY V3.7.0 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- BOOTSTRAP V5.3.0 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- WAYPOINT V4.0.1 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ADMIN MODEL & VIEW -->
+<script src="./admin/model/admin-model.js"></script>
+<script src="./admin/view/admin-view.js"></script>
+<!-- AXIOS LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- ADMIN VALIDATION -->
+<script src="./admin/controller/admin-validation.js"></script>
+<!-- ADMIN JS -->
+<script src="./admin/controller/admin-main.js"></script>
+
+
+</body>
+
+</html>
